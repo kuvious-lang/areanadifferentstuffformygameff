@@ -1,0 +1,65 @@
+BANDERCHAT M25 — CRK COMBAT, SUMMONERS, AND WIKI IMPORT
+
+Arena may browse:
+https://cookierunkingdom.fandom.com/wiki/Cookies
+and individual Cookie pages.
+
+Use wiki baseline fields:
+name, rarity, official class/type, position, element(s), pronouns, race/species/subtype, official skill name, skill description/effects, appearance, broad canon relationships/story.
+
+Explicit user headcanon overrides wiki when they conflict.
+
+Do not hand-code every Cookie in M25.
+Build:
+1. curated core roster
+2. reusable schema/import-friendly structure
+
+OFFICIAL CLASS VS BANDERCHAT ARCHETYPE
+Keep them separate.
+Example:
+officialClass=Ambush
+mechanicalTags=[Summoner, Debuffer, Support]
+
+Suggested Banderchat tags:
+Frontliner, Tank, Bruiser, Assassin, Ranged, Mage, Healer, Support, Controller, Debuffer, Buffer, Summoner, Burst, Sustain, Area, SingleTarget.
+
+REQUIRED SUMMONERS
+These Cookies MUST carry mechanicalTag=Summoner while preserving official class:
+- Cotton Cookie
+- Crunchy Chip Cookie
+- Licorice Cookie
+- Nutmeg Tiger Cookie
+- Oyster Cookie
+- Prune Juice Cookie
+- Pumpkin Pie Cookie
+- Rebel Cookie
+- Salt Cellar Cookie
+- Snow Sugar Cookie
+
+Summons are first-class encounter entities with ownerCharacterId, summonId, name/type, HP if configured, duration if temporary, actions, targeting rules, owner-linked buffs, despawn condition, independent/owner-commanded flag.
+
+SKILL TRANSLATION
+Use the Cookie’s REAL official skill name.
+Translate official behavior into compact deterministic Banderchat RPG actions.
+Do not recreate every mobile coefficient.
+Possible fields: id, officialName, displayName, actionType, damage/healing, element, targetMode, statusEffects, summonEffects, buffs/debuffs, resourceCost, cooldown, tags.
+
+AI narrates.
+Engine validates damage, healing, summon creation, status, legality, cooldown/resource use, and targets.
+
+POWER ASYMMETRY
+Do not flatten Beast/Ancient/Dragon-tier characters.
+
+CORE ROSTER
+Prioritize Shadow Milk, Pure Vanilla, Silent Salt, Mystic Flour, Eternal Sugar, Burning Spice, several Ancients, representative summoners, several ordinary Cookies, and at least one Dragon/special-race example.
+
+TESTS
+- official skill names preserved
+- official class and Banderchat archetype separate
+- all ten required summoners tagged
+- summon creation/despawn deterministic
+- owner/summon linkage persists
+- race/subtype preserved
+- high-tier characters not normalized
+- unknown skill rejected
+- unconfigured stats not fabricated

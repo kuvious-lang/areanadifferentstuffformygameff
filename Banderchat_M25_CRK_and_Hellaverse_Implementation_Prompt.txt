@@ -1,0 +1,179 @@
+M25 — COOKIE RUN KINGDOM + HAZBIN/HELLAVERSE FIRST-CLASS WORLD PACKAGES
+
+Repository:
+https://github.com/kuvious-lang/Banderchat
+
+Branch:
+arena/01a062d4-banderchat
+
+Accepted baseline:
+1c81461015c1ed57376705544ac6d7741abd7639
+
+M24 / PMD is complete and accepted.
+Begin M25 only. Do not begin M26.
+
+ATTACHED AUTHORITATIVE DOCUMENTS:
+1. CRK_M25_World_Biology_Canon_and_Headcanon_Bible.txt
+2. CRK_M25_Shadow_Milk_Pure_Vanilla_and_Witch_Character_Bible.txt
+3. CRK_M25_Combat_Summoners_and_Wiki_Import_Framework.txt
+4. HAZBIN_M25_Canon_Headcanon_and_RPG_Framework.txt
+
+Read all four before implementing.
+
+GOAL
+Add TWO first-class selectable Worlds:
+- world-crk
+- world-hellaverse
+
+Both must use existing World → Scenario → Run architecture.
+
+CRK
+Arena MAY browse https://cookierunkingdom.fandom.com/wiki/Cookies and individual pages for baseline facts.
+Use wiki for official skill name, class/position, elements, pronouns, race/species/subtype, appearance, broad canon relationships/story.
+Attached headcanon overrides wiki.
+
+Create curated core roster + data-driven extension structure, not every Cookie.
+
+CRK must support:
+- actual Cookie biology
+- race/subtype
+- jamline family relations
+- official skill names
+- Banderchat combat archetypes
+- summons
+- power tiers
+- Soul Jam-linked characters
+- relationships
+- optional headcanon toggles
+
+HARD CONTINUITY:
+Shadow Milk never receives Ultimate Cookie dough.
+No Ultimate Shadow Milk.
+No timeline-destruction branch.
+No perfect-world-from-destroyed-timelines storyline.
+
+REQUIRED CRK SUMMONERS
+Cotton Cookie
+Crunchy Chip Cookie
+Licorice Cookie
+Nutmeg Tiger Cookie
+Oyster Cookie
+Prune Juice Cookie
+Pumpkin Pie Cookie
+Rebel Cookie
+Salt Cellar Cookie
+Snow Sugar Cookie
+
+Each must have mechanicalTag=Summoner while preserving official class separately.
+
+CRK RPG
+Compact turn-based translation. Engine decides damage/healing/buffs/debuffs/summons/status/cooldowns/action legality.
+AI narrates.
+Do not reproduce mobile combat exactly.
+Strong characters remain strong.
+
+CRK SCENARIOS
+At least six demonstrating:
+- ordinary kingdom adventure
+- Beast encounter
+- Ancient/Beast tension
+- summon-heavy combat
+- Witch mystery
+- low-stakes social/kingdom play
+At least one exercises Shadow Milk + Pure Vanilla relationship anchors.
+Do not force romance.
+
+HELLAVERSE
+Implement world-hellaverse focused on social RPG, deals/contracts, power, leverage, consequences, faction reputation, relationships, occasional explosive combat.
+
+LUCIFER SINNER RULE
+Deterministic engine logic:
+Lucifer cannot directly damage Sinner targets.
+Reject direct damage attempts.
+No loopholes through environment, proxy attacks, summons, reflected damage, or indirect technicalities.
+Support/heal/shield/control may be legal.
+Non-Sinner damage may be legal.
+
+HELLAVERSE TOGGLES
+- seven_sins_family_dynamic
+- radioapple_slow_burn
+- rosie_lilith_eve_au
+
+When rosie_lilith_eve_au=ON:
+Eve=public/false Lilith
+Rosie=real Lilith
+Alastor initially knows
+Lucifer/Charlie/general Hell do not know
+Knowledge-gated.
+
+HELLAVERSE SCENARIOS
+At least six:
+- Hotel social conflict
+- Overlord negotiation
+- Alastor bargain
+- Lucifer/Sinner combat restriction stress scenario
+- Seven Sins political/family gathering
+- Optional hidden-identity mystery
+
+THEMES
+CRK: storybook fantasy, candy/royal, rounded, jewel-like gauges, rich readable palette, not PMD reuse.
+Hellaverse: red/black/cream/gold, art deco, cabaret/theatre, neon, sharp geometry, contracts/signage motif.
+Do not copy exact UI assets.
+
+TESTING — CRK
+1. world-crk selectable/seeds
+2. six scenarios
+3. species/race preserved
+4. Cookies not normalized to humans
+5. official skill names preserved
+6. official class vs archetype separate
+7. ten required Summoners tagged
+8. summon ownership/duration deterministic
+9. unknown summon rejected
+10. Beast/Ancient power asymmetry preserved
+11. Shadow Milk anchors present
+12. Witch mystery anchor present
+13. PV/Shadow soulmate toggle present
+14. Ultimate Cookie dough branch hard-disabled
+15. jamline parent relationship supported
+16. unconfigured stats not fabricated
+
+TESTING — HELLAVERSE
+1. world-hellaverse selectable/seeds
+2. six scenarios
+3. social relationship dimensions persist
+4. deal state persists
+5. deal breach deterministic
+6. power tiers preserved
+7. Alastor does not default to soul collection
+8. Lucifer direct damage vs Sinner rejected
+9. Lucifer support vs Sinner allowed
+10. no indirect loophole via summon/environment
+11. non-Sinner Lucifer damage may be legal
+12. Seven Sins family toggle works
+13. RadioApple slow-burn toggle works
+14. Rosie/Lilith/Eve AU knowledge gate works
+15. secret does not leak to unauthorized cast
+16. theme registered
+
+REGRESSION
+Preserve M12–M24.1 architecture, Emberfall, FFXIV, PMD, memory systems, deterministic state engine.
+
+Run:
+npm test
+npm run typecheck
+npm run build
+
+Push to:
+arena/01a062d4-banderchat
+
+Report:
+- files changed
+- CRK architecture and roster strategy
+- wiki usage
+- headcanon overrides
+- Hellaverse social/deal architecture
+- tests/typecheck/build
+- exact remote SHA
+
+Do not begin M26.

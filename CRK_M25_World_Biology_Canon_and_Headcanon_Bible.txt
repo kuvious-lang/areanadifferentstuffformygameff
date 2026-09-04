@@ -1,0 +1,63 @@
+BANDERCHAT M25 — COOKIE RUN KINGDOM
+WORLD BIOLOGY, CANON BASELINE, AND HEADCANON BIBLE
+
+SOURCE PRIORITY
+1. This document.
+2. User headcanon/AU rules.
+3. Cookie Run Kingdom wiki baseline facts for individual Cookies.
+4. Conservative inference only when implementation needs structure.
+
+Arena MAY browse https://cookierunkingdom.fandom.com/wiki/Cookies and individual Cookie pages.
+
+COOKIE BIOLOGY — HARD ANCHOR
+Cookies are actual sapient baked beings, not tiny humans.
+- Dough-based baked bodies.
+- Ingredients are part of identity/physiology.
+- Jam may function as blood/life analogue where appropriate.
+- Cracking, crumbling, stale dough, jam loss, burning/freezing can be meaningful injury language.
+- Cookie food culture should naturally favor sweets, cakes, pastries, jellies, syrups, creams, berries, sweet breads, candy, parfaits, juice, magical ingredient foods, and regional Earthbread cuisine.
+Do not casually give Cookies ordinary human diets unless cross-world context establishes it.
+
+SPECIES / RACE / SUBTYPE
+Do not flatten all beings to species=Cookie.
+Support species, race/subtype, lineage, and special origin.
+Examples: ordinary Cookie, Beast, Ancient, Dragon, mer-Cookie, tiger-Cookie hybrid, elemental/special lineage, artificial/derived Cookie, Witch-created special Cookie, and other wiki-supported categories.
+
+FAMILY / REPRODUCTION — USER CONTINUITY OVERRIDE
+Do NOT enforce a universal “all Cookies are only baked and cannot reproduce” rule.
+This continuity supports:
+- baked creation
+- biological/jamline descent
+- magical creation
+- adoption
+- chosen family
+- derived/cloned creation
+
+Relationship types should support baked sibling, jamline parent/child/sibling, adopted parent/child, creator/creation, ancestor/descendant, chosen family.
+
+Explicit continuity:
+- Grapevine Cookie is the biological/jamline mother of Vampire Cookie.
+
+Do not invent explicit reproductive mechanics. The engine only needs lineage/family facts.
+
+POWER SCALE
+Do not normalize powerful Cookies.
+Broad tiers may include ordinary Cookies, elite fighters, Ancient Heroes, Beast Cookies, Dragon-tier beings, Witch-level/special creator beings.
+Use comparable enemies, objectives, protection goals, environment, limited resources, consequences, seals/constraints—not fake normalization.
+
+CONTINUITY TOGGLES
+canon_core=ON
+shadow_pv_soulmate_bond=ON
+witch_attention_theory=ON
+headmaster_era_backstory=ON
+jamline_reproduction=ON
+ultimate_dough_timeline_branch=OFF
+
+FORBIDDEN CONTINUITY BRANCH
+Shadow Milk NEVER obtains or merges with any portion of the Ultimate Cookie’s dough.
+Therefore this continuity has:
+- no Ultimate Shadow Milk
+- no timeline-hopping destruction from that transformation
+- no destruction of alternate timelines to craft a perfect world
+- no powers or identity dependent on Ultimate Cookie dough
+This is not a nerf. The prerequisite event never happens.
