@@ -1,0 +1,102 @@
+FFXIV M23 — WORLD THEME & FF FREE MODE
+
+==================================================
+FFXIV WORLD THEME
+==================================================
+
+The FFXIV World should use Banderchat’s shared shell but feel visibly different from Emberfall and the old nautical prototype.
+
+Visual direction:
+- elegant
+- aetheric
+- crystalline
+- ivory / silver / restrained gold
+- cool blue-violet accents where appropriate
+- subtle job / constellation / crystal motifs
+- polished fantasy UI rather than parchment-heavy woodland UI
+
+Do not overdo ornament.
+Do not make it look like a literal copy of the FFXIV game UI.
+
+Retain the user’s preferred high-contrast red action buttons selectively for:
+- SEND
+- Start Adventure
+- major encounter / confirmation actions
+
+World theme may alter:
+- palette
+- border geometry
+- panel treatment
+- typography pairing
+- icon treatment
+- ornament / material language
+
+It should still use the shared Banderchat information architecture.
+
+==================================================
+FF FREE MODE
+==================================================
+
+Working name:
+FF Free Mode
+
+Purpose:
+Allow R'kuruh to travel via Ethos into other Final Fantasy worlds without requiring strict scene-by-scene canonical sequencing for games the user has not fully played.
+
+Core continuity rules:
+- R'kuruh retains his established continuity unless Scenario config overrides it
+- Ethos enables travel between Final Fantasy worlds
+- chosen companions may travel with him
+- selected memories / relationships persist
+- limited configured gear / inventory may persist
+- destination protagonist is NOT automatically replaced by R'kuruh
+- local protagonists and casts continue to exist normally
+
+Destination grounding should preserve:
+- major character identities
+- major factions
+- iconic locations
+- broad setting rules
+- local magic / technology logic
+
+Exact canonical sequencing may be relaxed unless the user pins a specific story checkpoint.
+
+==================================================
+STRICT MODE VS FREE MODE
+==================================================
+
+FFXIV Canon Timeline Mode:
+- timeline guardrails active
+- spoiler gating active
+- location grounding active
+- optional side-content state active
+- deterministic progression checkpoints
+
+FF Free Mode:
+- broad destination setting grounding
+- no requirement for complete canon timeline package
+- user may specify a precise point if desired
+- continuity can be intentionally crossover-heavy
+
+==================================================
+DESTINATION PACKAGE MODEL
+==================================================
+
+A lightweight destination package may contain:
+- world name
+- broad era / story point if known
+- key factions
+- major current locations
+- active local cast
+- local rules / metaphysics
+- spoiler locks only if user requested strictness
+
+Possible destinations include:
+- FFVII world
+- FFIX world
+- Spira / FFX
+- Ivalice / FFXII
+- Eos / FFXV
+- other Final Fantasy settings
+
+Do not require a full dedicated World package for every destination before FF Free Mode can function.

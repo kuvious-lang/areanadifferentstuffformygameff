@@ -1,0 +1,399 @@
+M23 — FFXIV FIRST-CLASS WORLD PACKAGE
+
+Repository:
+https://github.com/kuvious-lang/Banderchat
+
+Branch:
+arena/01a062d4-banderchat
+
+AUTHORITATIVE M23 ATTACHMENTS:
+1. FFXIV_M23_Thin_Timeline_Guardrails.txt
+2. FFXIV_M23_Optional_Content_and_Timeskip_Framework.txt
+3. FFXIV_M23_RPG_Combat_Jobs_and_Boss_Framework.txt
+4. FFXIV_M23_Theme_and_FF_Free_Mode.txt
+
+Read all four files before implementing.
+
+==================================================
+GOAL
+==================================================
+
+Implement Final Fantasy XIV as Banderchat’s next first-class World package using the M12–M22 architecture.
+
+This is NOT a request to build an FFXIV encyclopedia.
+
+MiMo already has substantial FFXIV knowledge.
+The purpose of Banderchat’s FFXIV package is to provide:
+- timeline guardrails
+- zone / arc anchoring
+- spoiler-state grounding
+- optional-content continuity
+- deterministic RPG mechanics
+- FFXIV-specific theme
+- FF Free Mode crossover support
+
+==================================================
+DO NOT DO THESE THINGS
+==================================================
+
+DO NOT:
+- hardcode giant lore summaries into every prompt
+- send the entire FFXIV timeline every turn
+- rebuild the generic World / Scenario / Run architecture
+- replace deterministic state validation with AI judgment
+- recreate FFXIV MMO rotations one-to-one
+- fabricate HP / MP / levels / gauges when not configured
+- normalize all characters to equal power
+- merge Scene Cast and Active Party
+- make all Scions automatically active party members
+- invent new canonical FFXIV facts to fill gaps
+- begin giant portrait-generation or asset-generation work
+- make FF Free Mode require full canon databases for every Final Fantasy game
+
+==================================================
+1. FIRST-CLASS WORLD
+==================================================
+
+Create/selectable World:
+Final Fantasy XIV
+
+Recommended ID:
+world-ffxiv
+
+Integrate with existing:
+World → Scenario → Run
+
+World package should be data-driven and isolated from Emberfall-specific logic.
+
+==================================================
+2. THIN TIMELINE ENGINE
+==================================================
+
+Implement data-driven FFXIV timeline checkpoint definitions based on the attached Thin Timeline Guardrails document.
+
+Required hierarchy:
+Expansion
+→ Patch / patch range
+→ Arc / zone phase
+→ Current location
+
+A Run must be able to store:
+- expansion
+- patch
+- arcId
+- locationId
+- completed milestones
+- locked future knowledge
+- optional story states
+
+The current arc packet sent to the RP model should be concise.
+
+Example target context:
+
+Expansion: Endwalker
+Patch: 6.0
+Arc: Garlemald
+Location: Garlemald
+Already happened: Sharlayan arrival; first Thavnair visit; Ilsabard contingent formed
+Current: imperial capital collapsed; survivors distrust outsiders; Tower of Babil active
+Not yet: Zodiark defeated; Meteion known; Elpis visited; Ultima Thule
+
+Do not send irrelevant timeline entries.
+
+==================================================
+3. TIMELINE START SELECTOR
+==================================================
+
+Scenario / Run setup should allow the user to choose a starting timeline checkpoint.
+
+Target UX:
+Expansion selector
+→ Patch / range selector
+→ Arc selector
+→ optional location override when appropriate
+
+This may be a reusable timeline-picker component, not FFXIV renderer spaghetti.
+
+==================================================
+4. LIVE PROGRESSION
+==================================================
+
+The model may PROPOSE a timeline advance.
+The deterministic engine validates it.
+
+Do not let the model arbitrarily jump arcs.
+
+Timeline transitions should use explicit milestone conditions.
+
+Manual timeline advancement / timeskip must also be supported.
+
+==================================================
+5. OPTIONAL CONTENT / RAID STATE
+==================================================
+
+Implement the attached optional-content framework.
+
+Support states:
+NOT_STARTED
+IN_PROGRESS
+COMPLETED
+COMPLETED_OFFSCREEN
+
+Include at least:
+
+ARR:
+- Binding Coil
+- Crystal Tower
+
+Heavensward:
+- Alexander
+- Shadows of Mhach
+- Warring Triad
+
+Stormblood:
+- Omega
+- Return to Ivalice
+- Four Lords
+
+Shadowbringers:
+- Eden
+- YoRHa: Dark Apocalypse
+- Sorrow of Werlyt
+
+Endwalker:
+- Pandæmonium
+- Myths of the Realm
+
+Starting after an optional series’ plausible completion window should allow:
+- All
+- Choose
+- None
+
+Manual timeline jumps should offer relevant skipped optional content for completion/offscreen completion.
+
+Optional completion must affect model grounding where relevant.
+
+==================================================
+6. SPOILER / KNOWLEDGE GATING
+==================================================
+
+Each timeline arc may define future facts that should not yet be treated as known.
+
+Examples:
+- pre-Amaurot Shadowbringers should not expose full Ancient revelations
+- pre-Elpis Endwalker should not expose full Final Days cause
+- early Dawntrail should not casually expose Alexandria / Solution Nine late-story revelations
+
+This is a guardrail, not a giant lore database.
+
+==================================================
+7. LOCATION GROUNDING
+==================================================
+
+The current location should strongly influence model context.
+
+Examples:
+Kugane 4.0:
+- Hingashi
+- Doman / Garlean Far East context
+- Ruby Sea
+- current Far East cast
+
+Garlemald 6.0:
+- imperial collapse
+- survivors
+- contingent
+- Tower of Babil
+
+Tuliyollal early 7.0:
+- rite of succession
+- Tural politics
+- current claimants
+
+The generated RP context should prioritize local relevance and suppress random unrelated old-zone chatter.
+
+==================================================
+8. FFXIV RPG SYSTEM
+==================================================
+
+Implement an FFXIV RPG configuration using existing generic deterministic game-state / encounter systems.
+
+Do NOT recreate MMO combat exactly.
+
+Implement data structures for:
+- FFXIV stats
+- HP / MP where configured
+- job identity
+- compact ability kits
+- optional simplified job gauges
+- statuses
+- Limit Break
+- boss telegraphs / turn objectives
+
+Seed representative job definitions for at least:
+- Dragoon
+- White Mage
+- Black Mage
+- Warrior
+- Summoner
+- Reaper
+- Blue Mage
+
+Use the attached combat framework as authority for the intended abstraction.
+
+Blue Mage rule:
+Do not assume spells are learned unless present in learned-spell state.
+
+==================================================
+9. BOSS MECHANICS
+==================================================
+
+Support deterministic turn-based mechanics such as:
+- stack
+- spread
+- tankbuster
+- adds
+- doom
+- enrage
+- arena hazard
+- phase transition
+
+The AI narrates telegraphs and action intent.
+The engine owns target/state resolution.
+
+==================================================
+10. CANON POWER
+==================================================
+
+Do not secretly flatten canon characters to equal power.
+
+Strong characters may be strong.
+Challenge may come from objectives, protection duties, comparable enemies, time pressure, or consequences instead of fake normalization.
+
+==================================================
+11. ACTIVE PARTY VS SCENE CAST
+==================================================
+
+Preserve existing architecture.
+
+A character may be present in the scene without being in Active Party.
+Do not automatically place every Scion or NPC in the combat party.
+
+==================================================
+12. FFXIV THEME
+==================================================
+
+Implement a distinct FFXIV World theme based on the attached theme document.
+
+Direction:
+- elegant
+- aetheric
+- crystalline
+- ivory / silver / restrained gold
+- cool blue-violet accents
+- subtle crystal / constellation / job motifs
+
+Preserve shared shell / information architecture.
+Do not copy the literal FFXIV UI.
+
+Retain selective high-contrast red action buttons for major actions such as:
+- SEND
+- Start Adventure
+- major encounter confirmations
+
+==================================================
+13. FF FREE MODE
+==================================================
+
+Implement FF Free Mode as a separate FFXIV-derived scenario/run mode.
+
+Premise:
+R'kuruh uses Ethos to travel into another Final Fantasy world.
+
+Persist configured:
+- R'kuruh continuity
+- chosen companions
+- memories / relationships
+- limited gear / inventory
+
+Destination world package may be lightweight.
+It should preserve broad destination:
+- character identities
+- factions
+- iconic locations
+- magic / technology rules
+
+Exact story chronology can be relaxed unless user pins a specific checkpoint.
+
+The local protagonist still exists.
+R'kuruh does not automatically replace them.
+
+==================================================
+14. STARTER SCENARIOS
+==================================================
+
+Create a small set of starter scenarios sufficient to exercise the system.
+
+Suggested examples:
+- Ishgard during Heavensward
+- Kugane during Stormblood
+- Crystarium / Lakeland during Shadowbringers
+- Garlemald during Endwalker
+- Tuliyollal during Dawntrail
+- FF Free Mode / Ethos crossover starter
+
+Keep scenario hooks concise.
+Do not write giant fanfiction plots.
+
+==================================================
+15. TESTS
+==================================================
+
+Add a comprehensive M23 test suite.
+
+At minimum verify:
+1. FFXIV World seeds correctly
+2. timeline selector data exists across ARR → Dawntrail
+3. Run timeline state is isolated per Run
+4. model context contains only relevant current timeline packet
+5. locked future facts are excluded
+6. manual timeline advance works
+7. AI timeline proposals require deterministic validation
+8. optional-content states persist
+9. completed-offscreen state is distinguishable internally
+10. timeskip offers eligible optional series
+11. location grounding changes context
+12. FFXIV jobs are data-driven
+13. BLU cannot use unlearned spells
+14. boss markers resolve deterministically
+15. Scene Cast and Active Party remain separate
+16. canon-power system does not force equality
+17. FFXIV theme resolves independently from Emberfall
+18. FF Free Mode persists R'kuruh continuity while using destination settings
+19. no Emberfall-specific logic leaks into FFXIV
+20. no regression to M12–M22 tests
+
+==================================================
+16. VALIDATION
+==================================================
+
+Run:
+npm test
+npm run typecheck
+npm run build
+
+Push to:
+arena/01a062d4-banderchat
+
+Do not begin another milestone.
+
+Final report should include:
+- files changed
+- architecture added
+- timeline implementation
+- optional-content implementation
+- RPG/job implementation
+- theme implementation
+- FF Free Mode implementation
+- test/typecheck/build results
+- exact remote SHA

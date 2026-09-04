@@ -1,0 +1,148 @@
+FFXIV M23 — OPTIONAL CONTENT, RAID SERIES, AND TIMESKIP FRAMEWORK
+
+Purpose
+-------
+FFXIV optional story content should be tracked independently of the main-scenario timeline.
+
+The user may:
+- play it normally
+- leave it untouched
+- partially complete it
+- jump forward in the MSQ and mark it as having happened offscreen
+
+Recommended internal states
+---------------------------
+NOT_STARTED
+IN_PROGRESS
+COMPLETED
+COMPLETED_OFFSCREEN
+
+The UI may simplify COMPLETED and COMPLETED_OFFSCREEN into a visible “Done” toggle while preserving the distinction internally.
+
+==================================================
+SERIES BY ERA
+==================================================
+
+A REALM REBORN
+- Binding Coil of Bahamut
+- Crystal Tower
+
+HEAVENSWARD
+- Alexander
+- Shadows of Mhach
+- Warring Triad
+
+STORMBLOOD
+- Omega
+- Return to Ivalice
+- Four Lords
+
+SHADOWBRINGERS
+- Eden
+- YoRHa: Dark Apocalypse
+- Sorrow of Werlyt
+
+ENDWALKER
+- Pandæmonium
+- Myths of the Realm
+
+DAWNTRAIL
+- allow later raid / alliance / trial-series packages to be added data-first
+- do not hardcode future assumptions into generic engine logic
+
+==================================================
+DEFAULT BEHAVIOR
+==================================================
+
+If a Run begins after an optional series could reasonably have been completed, Banderchat should offer:
+
+Assume prior optional stories completed?
+- All
+- Choose
+- None
+
+Example:
+
+Starting point:
+Endwalker 6.0 — Garlemald
+
+Selected:
+- Eden: Completed Offscreen
+- YoRHa: Not Started
+- Sorrow of Werlyt: Completed Offscreen
+
+Result:
+The world may treat Eden and Werlyt relationships, revelations, and character familiarity as established continuity.
+YoRHa-exclusive events should not be assumed.
+
+==================================================
+TIMESKIP
+==================================================
+
+When the user manually advances the MSQ timeline, Banderchat should inspect optional content whose release window lies between old and new checkpoints.
+
+Example:
+Current:
+Shadowbringers 5.0 — Crystarium / Lakeland
+
+Jump to:
+Endwalker 6.0 — Old Sharlayan
+
+Offer:
+During the timeskip, which optional stories happened?
+- Eden
+- YoRHa
+- Sorrow of Werlyt
+
+This is continuity configuration, not a mandatory checklist.
+
+==================================================
+SIDE-CONTENT EFFECTS
+==================================================
+
+Completion may affect:
+- NPC familiarity
+- dialogue references
+- known lore
+- unlocked locations
+- relationship history
+- optional character availability
+- world-state assumptions
+
+The model should NOT casually reference optional-story-exclusive revelations if the relevant series is not marked complete.
+
+==================================================
+RAID/TRIAL SERIES ASSUMPTION RULE
+==================================================
+
+For a user starting far later in the timeline, it is acceptable for the setup UI to offer “assume all earlier major optional series complete.”
+
+This is especially useful when skipping expansions.
+
+Example:
+User starts Endwalker and does not want to roleplay Eden.
+Toggle:
+Eden — Done
+
+Banderchat treats Eden as completed in the continuity.
+
+==================================================
+NO FORCED NORMALIZATION
+==================================================
+
+Optional completion state must not force gameplay balance changes.
+If an optional story canonically makes a character stronger, more knowledgeable, or more familiar with a concept, preserve that consequence.
+
+==================================================
+DATA MODEL SUGGESTION
+==================================================
+
+OptionalStoryState {
+  seriesId
+  status
+  completedAtTimelineCheckpoint?
+  completedOffscreen?: boolean
+  notes?
+}
+
+The engine should expose only relevant completed optional stories to the model for the current scene.

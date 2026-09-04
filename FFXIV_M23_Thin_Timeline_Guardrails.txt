@@ -1,0 +1,604 @@
+FFXIV M23 — THIN TIMELINE & LOCATION GUARDRAILS
+
+Purpose
+-------
+This document is NOT an encyclopedia of Final Fantasy XIV lore.
+MiMo already demonstrates strong broad FFXIV knowledge. The purpose of this layer is to keep roleplay grounded to the correct era, zone, cast availability, and spoiler state.
+
+Core model
+----------
+Track:
+
+EXPANSION
+→ PATCH / PATCH RANGE
+→ ARC / ZONE PHASE
+→ CURRENT LOCATION
+
+Each active arc stores only:
+- already happened
+- currently relevant
+- not yet happened / spoiler locked
+- important cast availability
+- next transition condition
+- optional side-content completion state
+
+Context priority
+----------------
+1. Current location / zone
+2. Current arc
+3. Patch state
+4. Expansion state
+5. Completed optional stories
+6. Older canon only when directly relevant
+
+The AI may propose progression, but only the deterministic engine may actually advance the timeline state.
+
+==================================================
+A REALM REBORN
+==================================================
+
+2.0 — STARTING CITY / EARLY ADVENTURER
+Zones: Gridania, Limsa Lominsa, or Ul'dah depending start
+Already happened:
+- local adventurer introduction
+Current:
+- Echo discovery
+- early city-state/local threats
+- Scions beginning to take interest
+Not yet:
+- famous Warrior of Light status
+- Rising Stones
+- Crystal Braves
+- Ishgard access
+
+2.0 — WAKING SANDS / IFRIT
+Zones: Thanalan / Waking Sands
+Current:
+- Scion involvement
+- Amalj'aa / Ifrit crisis
+Not yet:
+- Titan
+- Garuda
+- Praetorium finale
+
+2.0 — TITAN / LA NOSCEA
+Current:
+- Kobold / Titan crisis
+- Company of Heroes preparations
+Not yet:
+- Garuda
+- Praetorium finale
+
+2.0 — COERTHAS / GARUDA
+Zone: Coerthas Central Highlands
+Current:
+- Ishgardian suspicion
+- heretic / dragon tension
+- Garuda pursuit
+Not yet:
+- open Ishgard access
+- Heavensward political revelations
+
+2.0 — GARLEAN ENDGAME
+Zones: Mor Dhona / Northern Thanalan
+Current:
+- Cid / Enterprise
+- Garlean offensive
+- Castrum / Praetorium / Ultima Weapon
+Completion:
+- Gaius defeated
+- Ultima Weapon destroyed
+- Lahabrea confronted
+- Warrior of Light status firmly established
+
+2.1 — RISING STONES / REVENANT'S TOLL
+Zone: Mor Dhona
+Current:
+- Scions relocate to Rising Stones
+- Good King Moggle Mog
+- Doman refugees / Yugiri enter story
+Not yet:
+- Leviathan
+- Shiva
+- Crystal Braves collapse
+
+2.2 — LEVIATHAN / DOMAN SETTLEMENT
+Zones: La Noscea / Mor Dhona
+Current:
+- Sahagin / Leviathan
+- Doman settlement threads
+
+2.3 — RAMUH / EORZEAN POLITICS
+Zone: Black Shroud
+Current:
+- sylph / Ramuh conflict
+- Scions more deeply involved in politics
+
+2.4 — SHIVA / COERTHAS
+Zones: Coerthas / Snowcloak
+Current:
+- Iceheart / Ysayle
+- Shiva
+- Dragonsong War setup intensifies
+- Crystal Braves increasingly unstable
+
+2.5–2.55 — BEFORE THE FALL
+Current:
+- Keeper of the Lake / Midgardsormr
+- Ishgard crisis
+- Crystal Braves collapse
+- Ul'dah banquet disaster
+Completion:
+- Scions scattered
+- R'kuruh flees north with Alphinaud and Tataru
+Transition:
+→ Heavensward
+
+==================================================
+HEAVENSWARD
+==================================================
+
+3.0 — ISHGARD ARRIVAL
+Zones: Foundation / The Pillars
+Current:
+- House Fortemps sanctuary
+- Ishgardian politics
+- Dragonsong War
+- Haurchefant / Aymeric / Fortemps family highly relevant
+Not yet:
+- full truth of Dragonsong War
+- Vault tragedy
+- Azys Lla finale
+
+3.0 — COERTHAS WESTERN HIGHLANDS
+Current:
+- heretics
+- dragon activity
+- Ysayle trail
+
+3.0 — SEA OF CLOUDS
+Current:
+- Vanu Vanu
+- sky-island travel
+- Ishgardian regional interests
+
+3.0 — DRAVANIAN FORELANDS
+Current:
+- Ysayle as traveling companion
+- search for peaceful path with dragons
+
+3.0 — CHURNING MISTS
+Current:
+- Hraesvelgr
+- moogles
+- deeper Dragonsong truth
+
+3.0 — ISHGARD RETURN / THE VAULT
+Current:
+- religious / political confrontation
+State boundary:
+- Haurchefant dies here
+After completion:
+- cast emotional state must reflect this loss
+
+3.0 — DRAVANIAN HINTERLANDS / MAToya
+Zones: Idyllshire / Hinterlands / Matoya's Cave
+Current:
+- Y'shtola recovered
+- Sharlayan knowledge becomes central
+
+3.0 — AZYS LLA / THORDAN
+Current:
+- Allagan superstructure
+- Archbishop pursuit
+Completion:
+- Thordan defeated
+Not yet:
+- final Dragonsong resolution
+
+3.1–3.3 — DRAGONSONG RESOLUTION
+Current:
+- Ishgard rebuilding / reform
+- fragile peace
+- Nidhogg remains central until 3.3
+Completion of 3.3:
+- Dragonsong War effectively concluded
+- Estinien state changes
+- Aymeric / Ishgard political state changes
+
+3.4–3.56 — WARRIORS OF DARKNESS / ALA MHIGO SETUP
+Current:
+- shards / First become explicit
+- Griffin / Ilberd
+- Ala Mhigan resistance tension
+- Baelsar's Wall
+Completion:
+- Shinryu summoned
+- Papalymo's fate
+Transition:
+→ Stormblood
+
+==================================================
+STORMBLOOD
+==================================================
+
+4.0 — GYR ABANIA / RHALGR'S REACH
+Zones: The Fringes / Rhalgr's Reach
+Current:
+- Ala Mhigan Resistance
+- Zenos introduced as major threat
+- liberation campaign begins
+Not yet:
+- Far East campaign
+- Doma liberation
+
+4.0 — RESISTANCE DEFEAT
+Current:
+- Rhalgr's Reach attacked
+- liberation effort suffers major setback
+Transition:
+→ Far East strategy
+
+4.0 — KUGANE
+Zone: Kugane
+Current:
+- Hingashi
+- Doman / Garlean Far East context
+- Ruby Sea connections
+- Hien / Yugiri objectives
+Do not casually foreground:
+- future First / Endwalker / Dawntrail knowledge
+- random Eorzean local threats unrelated to current mission
+
+4.0 — RUBY SEA
+Current:
+- Confederacy
+- Kojin
+- maritime politics
+
+4.0 — YANXIA / DOMAN RESISTANCE
+Current:
+- occupied Doma
+- Hien becomes central
+
+4.0 — AZIM STEPPE
+Current:
+- Xaela tribes
+- Naadam
+- Hien gathering allies
+
+4.0 — DOMA LIBERATION
+Current:
+- retaking Doma Castle
+Completion:
+- Doma liberated
+
+4.0 — RETURN TO ALA MHIGO
+Current:
+- eastern success feeds western campaign
+
+4.0 — PEAKS / LOCHS / ALA MHIGO
+Current:
+- final liberation push
+- Zenos confrontation
+Completion:
+- Ala Mhigo liberated
+
+4.1–4.3 — LIBERATION AFTERMATH
+Current:
+- Ala Mhigan political aftermath
+- Doman rebuilding / Asahi / Yotsuyu
+Completion of 4.3:
+- Tsukuyomi / Yotsuyu arc resolved
+
+4.4–4.56 — PRE-SHADOWBRINGERS
+Current:
+- Garlean escalation
+- Scion Calling
+- Ghimlyt Dark
+Completion:
+- R'kuruh answers mysterious call
+Transition:
+→ Shadowbringers
+
+==================================================
+SHADOWBRINGERS
+==================================================
+
+5.0 — CRYSTARIUM / LAKELAND
+Current:
+- arrival on the First
+- Crystal Exarch
+- Sin Eaters
+- Lightwardens
+- Scions stranded on First
+Not yet:
+- full Ancient revelations
+- Hades finale
+- Elidibus finale
+
+5.0 — AMH ARAENG I
+Current:
+- Thancred
+- Minfilia / Ryne
+- Lightwarden crisis
+
+5.0 — KHOLUSIA I
+Current:
+- Alphinaud
+- Eulmore
+- Vauthry
+
+5.0 — IL MHEG
+Current:
+- Urianger
+- pixies
+- Titania
+
+5.0 — RAK'TIKA GREATWOOD
+Current:
+- Y'shtola
+- Night's Blessed
+- Ronkan history
+- Qitana Ravel
+
+5.0 — AMH ARAENG II / RYNE
+State boundary:
+- Minfilia / Ryne identity arc resolves
+After completion:
+- use post-resolution Ryne characterization
+
+5.0 — KHOLUSIA II / MT. GULG
+Current:
+- Vauthry confrontation
+- final Lightwarden crisis
+
+5.0 — THE TEMPEST / AMAUROT
+Current:
+- Ancient / Amaurot revelations
+- Emet-Selch central
+
+5.0 — HADES
+Completion:
+- Emet-Selch defeated
+- major Ancient truths unlocked
+
+5.1–5.3 — ELIDIBUS / RETURN HOME
+Current:
+- First aftermath
+- Scions seek return path
+- Elidibus becomes central
+Completion of 5.3:
+- Elidibus defeated
+- Scions physically back on Source
+- G'raha joins in his post-First state
+
+5.4–5.55 — ENDWALKER PRELUDE
+Current:
+- Fandaniel
+- Zenos
+- towers / lunar primals
+- preparing for Garlemald
+Transition:
+→ Endwalker
+
+==================================================
+ENDWALKER
+==================================================
+
+6.0 — OLD SHARLAYAN
+Current:
+- Forum resistance
+- Baldesion Annex
+- Sharlayan mystery
+Not yet:
+- Garlemald collapse witnessed firsthand
+- Zodiark defeat
+- Meteion knowledge
+- Elpis
+
+6.0 — THAVNAIR I
+Zones: Radz-at-Han / Thavnair
+Current:
+- alchemy
+- Vrtra-related groundwork
+- tower crisis
+
+6.0 — LABYRINTHOS I
+Current:
+- Sharlayan evacuation project mystery
+
+6.0 — GARLEMALD
+Zone: Garlemald
+Already happened:
+- Sharlayan arrival
+- first Thavnair visit
+- Ilsabard contingent formed
+Current:
+- imperial capital collapsed
+- survivors distrust outsiders
+- contingent intervention
+- Tower of Babil active threat
+Not yet:
+- Zodiark defeated
+- Final Days openly spreading
+- Meteion known
+- Elpis visited
+- Hydaelyn final trial
+- Ultima Thule
+
+6.0 — TOWER OF BABIL
+Current:
+- Garlemald arc culmination
+Transition:
+→ Mare Lamentorum
+
+6.0 — MARE LAMENTORUM / ZODIARK
+Current:
+- Moon arrival
+- Zodiark confrontation
+- Fandaniel plan
+State boundary after completion:
+- cosmological situation changes drastically
+
+6.0 — LOPORRITS / MOON AFTERMATH
+Current:
+- Loporrits
+- Moon evacuation purpose
+- Sharlayan plan clearer
+
+6.0 — THAVNAIR II / FINAL DAYS
+Current:
+- Final Days manifest strongly
+- Radz-at-Han crisis
+Not yet:
+- full cause known
+
+6.0 — SHARLAYAN / ELPIS SETUP
+Current:
+- investigation into cause of Final Days
+Transition:
+→ Elpis
+
+6.0 — ELPIS
+Current:
+- unsundered world
+- Venat
+- Emet-Selch
+- Hythlodaeus
+- Hermes
+- Meteion
+State boundary after completion:
+- cause of Final Days known to R'kuruh
+- much deeper Venat / Hydaelyn / Ancient knowledge unlocked
+
+6.0 — AITIASCOPE / HYDAELYN
+Current:
+- return to present
+- Aitiascope
+- Hydaelyn confrontation
+- final preparation
+
+6.0 — ULTIMA THULE
+Current:
+- edge-of-universe expedition
+- Meteion crisis
+- Scion sacrifices / restorations
+
+6.0 — ENDSINGER / ZENOS FINALE
+Completion:
+- Final Days resolved
+- Hydaelyn / Zodiark saga concluded
+- personal final confrontation with Zenos
+
+6.1–6.55 — VOID ARC
+Current progression:
+- Newfound Adventure
+- Vrtra / Azdaja goal
+- Zero / Thirteenth
+- Golbez escalation
+- Void arc resolution
+Transition:
+→ Dawntrail
+
+==================================================
+DAWNTRAIL
+==================================================
+
+7.0 — TULIYOLLAL / RITE OF SUCCESSION
+Zone: Tuliyollal
+Current:
+- Tural
+- Wuk Lamat's succession bid
+- Gulool Ja Ja
+- rival claimants
+- exploration / diplomacy tone
+Not yet:
+- Solution Nine
+- Alexandria revelations
+- Sphene
+- Heritage Found late-story context
+- Living Memory
+
+7.0 — URQOPACHA
+Current:
+- mountainous Yok Tural region
+- Pelupelu
+- Yok Huy
+- alpaca / trade culture
+- rite-of-succession objectives
+Not yet:
+- Alexandria / Solution Nine late-story knowledge
+
+7.0 — KOZAMA'UKA
+Current:
+- Hanuhanu
+- Moblins
+- local rite objectives
+
+7.0 — YAK T'EL
+Current:
+- Mamool Ja
+- Xbr'aal / Mamool Ja history
+- deeper succession / local-history context
+
+7.0 — SHAALOANI
+Current:
+- Xak Tural frontier tone
+- transition toward later Dawntrail conflict
+
+7.0 — HERITAGE FOUND
+Current:
+- field-zone setting fundamentally different from earlier Tural regions
+- Alexandrian technological influence becomes relevant
+Not yet / gate carefully:
+- only reveal later Solution Nine / Alexandria facts when story has actually reached them
+
+7.0 — SOLUTION NINE
+Current:
+- highly advanced city
+- Alexandrian civilization context
+- Everkeep / late-Dawntrail political-technological state
+
+7.0 — LIVING MEMORY / FINALE
+Current:
+- late-story Alexandria revelations
+- Sphene climax
+Completion:
+- 7.0 main story concluded
+
+==================================================
+POST-7.0
+==================================================
+
+Do not hardcode speculative summaries for future or unreviewed patch arcs.
+Represent them as data-driven entries once reviewed.
+
+==================================================
+IMPLEMENTATION RULES
+==================================================
+
+The timeline system should be editable and data-driven.
+Do not bury FFXIV story state in model prompts or renderer conditionals.
+
+A Run should store a compact TimelineState object similar to:
+
+{
+  expansion,
+  patch,
+  arcId,
+  locationId,
+  completedMilestones[],
+  lockedKnowledgeIds[],
+  optionalContentStates{}
+}
+
+The prompt context generated from this object should be concise.
+
+The AI should be told:
+- where it is
+- what has happened
+- what is happening now
+- what is not yet known
+
+Do NOT send the entire FFXIV timeline every turn.

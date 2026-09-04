@@ -1,0 +1,270 @@
+FFXIV M23 — RPG COMBAT, JOBS, AND BOSS FRAMEWORK
+
+Purpose
+-------
+Translate FFXIV combat identity into Banderchat’s deterministic RPG engine without attempting to recreate the MMO rotation system.
+
+This is a turn-based roleplay RPG interpretation.
+The AI narrates intent and consequences.
+The engine validates stats, resources, statuses, target rules, and encounter state.
+
+==================================================
+CORE PRINCIPLES
+==================================================
+
+1. Preserve job fantasy, not MMO button count.
+2. Use compact signature kits.
+3. Preserve iconic gauges where useful, but simplify them.
+4. Boss mechanics become turn-based objectives.
+5. Strong canon characters may actually be strong.
+6. Do not secretly normalize everyone to the same power level.
+7. Never fabricate levels, HP, MP, gauges, or equipment if the Run has not configured them.
+
+==================================================
+DEFAULT FFXIV RPG STATS
+==================================================
+
+Suggested generic stats:
+- Vitality
+- Strength
+- Dexterity
+- Intelligence
+- Mind
+- Defense
+- Speed
+- Aether
+
+Not every job must use every stat equally.
+
+Resources:
+- HP
+- MP where relevant
+- optional job gauge(s)
+
+==================================================
+JOB KIT MODEL
+==================================================
+
+Each configured Job can define:
+- role
+- weapon type
+- primary stats
+- passive identity
+- 4–8 signature actions
+- simplified gauge or stance
+- defensive / mobility tools
+- support tools
+- Limit Break access
+
+Do NOT implement giant MMO rotations.
+
+==================================================
+EXAMPLE JOB TRANSLATIONS
+==================================================
+
+DRAGOON
+Identity:
+- mobile burst melee
+- aerial attacks
+- positional pressure
+Signature actions:
+- Jump / High Jump
+- Chaos Thrust
+- Dragonfire Dive
+- Life Surge
+- defensive / evasive leap
+Optional gauge:
+- simplified Dragon state
+
+WHITE MAGE
+Identity:
+- pure healing
+- burst recovery
+- holy magic
+Signature actions:
+- Cure
+- Cure II
+- Regen
+- Medica
+- Esuna
+- Holy
+- Benediction
+Optional gauge:
+- simplified Lily resource
+
+BLACK MAGE
+Identity:
+- extremely high stationary spell damage
+- fire / ice cycling
+Stance:
+- Astral Fire
+- Umbral Ice
+Signature actions:
+- Fire-family attack
+- Blizzard-family attack
+- Thunder
+- Flare / high-cost finisher
+- defensive teleport / reposition option
+
+WARRIOR
+Identity:
+- tank
+- rage / self-sustain
+- brutal counterpressure
+Signature actions:
+- heavy axe strike
+- defensive guard
+- self-heal / sustain
+- burst rage attack
+- party protection option
+
+SUMMONER
+Identity:
+- primal-themed casting
+- phase-based summons
+Simplified phases:
+- Ifrit
+- Titan
+- Garuda
+- major summon burst where continuity permits
+
+REAPER
+Identity:
+- scythe melee
+- voidsent avatar
+- burst transformation
+Resource:
+- Soul gauge
+Signature actions:
+- scythe combo strike
+- ranged soul attack
+- avatar strike
+- Enshroud
+- mobility dash
+
+BLUE MAGE
+Identity:
+- learned monster techniques
+- highly flexible but dependent on acquired spell list
+Rule:
+- never assume a Blue Magic spell is known unless configured in the character’s learned-spell collection
+
+==================================================
+LIMIT BREAK
+==================================================
+
+Limit Break should be an encounter resource, not a routine button.
+
+Possible rules:
+- charge through danger / coordination / major encounter beats
+- role-dependent effects
+- dramatic, high-impact usage
+- may be party-wide resource unless Scenario config says otherwise
+
+==================================================
+STATUS EFFECTS
+==================================================
+
+FFXIV world package may support generic statuses such as:
+- Poison
+- Bleed
+- Vulnerability Up
+- Damage Down
+- Stun
+- Bind
+- Heavy
+- Silence
+- Doom
+- Regen
+- Barrier
+- Damage Up
+- Protect-style mitigation
+
+Do not create a massive status catalog unless required.
+
+==================================================
+BOSS MECHANICS AS TURN OBJECTIVES
+==================================================
+
+Translate MMO mechanics into readable turn-state problems.
+
+Examples:
+- Stack marker → allies must group before resolution
+- Spread markers → affected characters must separate
+- Tankbuster → targeted defender must mitigate / intercept / reposition
+- Adds → secondary enemies create pressure until defeated
+- Doom → cleanse / condition resolution before timer expires
+- Enrage → encounter must be resolved before turn threshold
+- Arena hazard → movement / safe-zone objective
+- Phase transition → boss behavior and available actions change
+
+The AI describes telegraphs.
+The deterministic engine tracks markers, timers, targets, and resolution.
+
+==================================================
+CANON POWER RULE
+==================================================
+
+Do not flatten canon power differences merely for fairness.
+
+Examples:
+- veteran Scions should not feel like generic level-1 companions
+- major bosses can vastly exceed ordinary enemies
+- extraordinary characters may trivialize ordinary combat
+
+Challenge such characters through:
+- objectives
+- protection missions
+- time pressure
+- split priorities
+- environmental constraints
+- comparable enemies
+- consequences beyond raw damage
+
+Do not fake weakness.
+
+==================================================
+TARGET / LORE RULES
+==================================================
+
+Certain abilities may require:
+- target tags
+- species tags
+- aetheric properties
+- immunity flags
+- story-state conditions
+
+The engine decides legality.
+The AI should not loophole around deterministic restrictions.
+
+==================================================
+PARTY MODEL
+==================================================
+
+Use the existing Banderchat Scene Cast vs Active Party split.
+
+FFXIV party members can have:
+- current job / combat profile
+- HP / MP only if configured
+- statuses
+- relationship data
+- temporary encounter mechanics
+
+Do not automatically put every present Scion in Active Party.
+
+==================================================
+NONCOMBAT ACTIONS
+==================================================
+
+FFXIV scenarios should also support:
+- persuasion
+- investigation
+- aetheric sensing
+- tracking
+- crafting / field repair
+- healing
+- diplomacy
+- stealth
+- knowledge checks
+
+The package must not turn every FFXIV scene into combat.
